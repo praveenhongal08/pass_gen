@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dr.Suresh Kammar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/1.jpeg' %}" rel="icon">
+  <!-- <link href="../static/img/1.jpg" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.10.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<script>
+  function moreless() {
+    var dots = document.getElementById("dots");
+    var invisibleText = document.getElementById("invisible-text");
+    var btnText = document.getElementById("btn");
+    if (dots.style.display != "none") {
+      dots.style.display = "none";
+      invisibleText.style.display = "inline";
+      btnText.innerHTML = "Read Less";
+
+    }
+    else {
+      dots.style.display = "inline";
+      invisibleText.style.display = "none";
+      btnText.innerHTML = "Read More";
+    }
+  }
+
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  function empower() {
+    var points = document.getElementById("points");
+    var showmoretext = document.getElementById("moretext");
+    var buttontext = document.getElementById("textbutton");
+    if (points.style.display === "none") {
+      showmoretext.style.display = "none";
+      points.style.display = "inline";
+      buttontext.innerHTML = "Read More";
+    }
+    else {
+      showmoretext.style.display = "inline";
+      points.style.display = "none";
+      buttontext.innerHTML = "Read Less";
+    }
+
+  }
+
+  function sympthy() {
+    var spoints = document.getElementById("spoints");
+    var symtext = document.getElementById("smoretext");
+    var sbuttontext = document.getElementById("sbuttontext");
+
+    if (spoints.style.display === "none") {
+      symtext.style.display = "none";
+      spoints.style.display = "inline";
+      sbuttontext.innerHTML = "Read More";
+    }
+    else {
+      symtext.style.display = "inline";
+      spoints.style.display = "none";
+      sbuttontext.innerHTML = "Read Less";
+    }
+  }
+
+function human()
+{
+  var hpoints=document.getElementById("hpoints");
+  var hmoretext=document.getElementById("hmoretext");
+  var hbuttontext=document.getElementById("hbuttontext");
+
+  if(hpoints.style.display==="none")
+  {
+    hmoretext.style.display="none";
+    hpoints.style.display="inline";
+    hbuttontext.innerHTML="Read More";
+  }
+  else{
+    hmoretext.style.display="inline";
+    hpoints.style.display="none";
+    hbuttontext.innerHTML="Read Lesss"
+  }
+}
+
+function education()
+{
+
+  var epoints=document.getElementById("epoints");
+  var emoretext=document.getElementById("emoretext");
+  var ebhuttontext=document.getElementById("ebhuttontext");
+
+  if(epoints.style.display==="none")
+  {
+    emoretext.style.display="none";
+    epoints.style.display="inline";
+    ebhuttontext.innerHTML="Read More";
+  }
+  else{
+    emoretext.style.display="inline";
+    epoints.style.display="none";
+    ebhuttontext.innerHTML="Read Less";
+  }
+
+}
+
+</script>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Dr. Suresh Kammar</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <br><b style="font-size: 15px;">Social Worker, <span>Politician,</span></b>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header" style="font-size: 20px;">Home</a></li>
+          <li><a class="nav-link" href="#about" style="font-size: 25px;"><b>About</b></a></li>
+          <li><a class="nav-link" href="#resume" style="font-size: 25px;"><b>Resume</b></a></li>
+          <li><a class="nav-link" href="#services" style="font-size: 25px;"><b>Services</b></a></li>
+          <li><a class="nav-link" href="#portfolio" style="font-size: 25px;"><b>Portfolio</b></a></li>
+          <li><a class="nav-link" href="#contact" style="font-size: 25px;"><b>Contact</b></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="http://twitter.com/lifetouchdwd" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="http://www.facebook.com/pages/Life-Touch-Foundation/155622471194931" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/drsureshkammar?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dr-suresh-kammar-2365a01b2" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Dr.Suresh Kammar</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="{% static 'img/2.jpeg' %}" height="350px" width="350px">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div align="justify" style="font-size:18px;"><span class="name"><strong>Dr. Suresh Kammar </strong></span>was
+            born in 1969 in the Karnataka state. After having received graduation in Drawing, he has rendered his
+            services as a Pioneer Teacher. In the filed of Kannada Film Industry, Professional Art field and even worked
+            as a Musician, Singer, Director, Judge and guide for the last 25 years. </div> <br>
+          <p align="justify" class="normal-text" style="font-size:18px;">Later, after being given such a great service,
+            now that is oflate, recently just before 7 years he alone has established <strong>Life Touch
+              Foundation</strong> which is social service center and even worked towards its upliftment. Along with this
+            he has indulged himself in the social service for welfare of the rural youth and their progress in the
+            education as well as their development. Keeping in the mind, such a large progress, even he has implemented
+            some of the new programmes and free computer education camps; so as to contribute for the development of the
+            youth belonging to slum areas and for the women living in the backward areas, he has conducted so many free
+            self employment programmes.</p>
+        </div><br>
+        <div align="justify" style="font-size:18px;">Awareness and consciousness programmes, and given good guidance,
+          encouragement. Further, he has planned some of the Industrial orientation, training camps, especially for the
+          rural and urban backward territories. Later, through these channels, he has writed women across these areas
+          and constructed <strong>&lsquo;Self &ndash; help &ndash; groups&rsquo;</strong></div><br>
+        <div align="justify" style="font-size:18px;">Moreover, in most of the occasions, he has given financial
+          assistance to make them self &ndash; reliant and self &ndash; dependent. Further, he worked as a <span
+            class="red1">Human - Right - Activist</span> as well as, member of the state. Obliviously he has helped many
+          in eradicating Injustice &ndash; Tortures - Encroachment - Ill treatment. So by the virtue of which, he stood
+          as a mighty power against the violation of Human Rights and he has taken some special care; by surveying some
+          of the local thoughts. Even, he had a discussion with the concerned officials to help guide and restrain the
+          particular and justice and social development and for the public interest as well as state interest and stood
+          distinctly for his unselfished service.</div><br>
+        <em><strong>Owing to such volunteer social - service, he has become the recipient of &lsquo;National Social Gold
+            Award&rsquo;, &lsquo;Best Social Worker 2010&rsquo; Award. Like this, he not only received , so many awards,
+            but&nbsp; also bagged &lsquo;Honorable Doctorate Award in Social Service&rsquo;</strong></em><br>
+        <div align="justify" style="font-size:18px;">Truly, hats off to such a leader amongst we people; who have really
+          been sacrificing his life or the development of society and for the progress in youth.</div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Counts ======= -->
+    <div class="counts container">
+      <h2>Awards</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert1.jpg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert1.jpg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert2.jpg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert2.jpg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert3.jpg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert3.jpg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert4.jpg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert4.jpg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert5.jpeg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert5.jpeg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert6.jpeg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert6.jpeg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert7.jpeg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert7.jpeg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <!--<span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>-->
+            <a href="{% static 'img/cert8.jpeg' %}" rel="lightbox[roadtrip]" title="Life Touch Foundation"><img
+                src="{% static 'img/cert8.jpeg' %}" width="200" border="0" class="gal-photo" /></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Counts -->
+    <div>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>11 National
+        Awardee. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Honorary
+        PhD,Dlit in the year 2009. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Dr.
+        A.P.J Abdul Kalam Bharata Shanti Rashtriya
+        Puraskar in 2010.</p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>National
+        Samajaratna Award in 2010. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Best Social
+        Worker 2010 - India Award. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Buddha
+        Shanti Rastriya Puraskar in 2011. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Nominated for
+        Padmashree Award through MP to President
+        of India in 2011.</p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Man of
+        Humanity 2012 India Award. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Covid-19 Warrior.
+      </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Awarded as
+        International great warrior of Humanity from
+        Royal Academy of USA.</p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Rastriya
+        Samaj Seva Ratna 2022 Award. </p>
+      <p style="font-size:22px;"><span style='font-size:50px;color: rgb(240, 234, 234);'>&#9755;</span>Received Rastriya
+        Vishwa Jana Seva Ratna 2022 Award. </p>
+
+    </div>
+    <!-- ======= Skills  ======= -->
+
+    <!-- ======= Interests ======= -->
+    <!-- End Interests -->
+
+    <!-- ======= Testimonials ======= -->
+  <div class="testimonials container">
+
+      <div class="section-title">
+        
+      </div>
+
+    
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div> <!--End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <p></p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Resume</h3>
+
+          <div class="resume-item pb-0">
+            <h4>Dr.Suresh Kammar</h4>
+            <p><em><strong>
+                  SAVADATTI AS A
+                  INSPIRATIONAL
+                  MODEL FOR
+                  KARNATAKA AND
+                  INDIA..</strong></em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Date of Birth</h4>
+            <p><em> 07-06-1969</em></p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+
+            <p><em> DMC, PhD, Dlit.</em></p>
+
+          </div>
+          <h3 class="resume-title">Language</h3>
+          <div class="resume-item">
+
+            <p><em> Kannada English Hindi.</em></p>
+
+          </div>
+          <h3 class="resume-title">Father</h3>
+          <div class="resume-item">
+
+            <p><em> Served as Army Officer.</em></p>
+
+          </div>
+          <h3 class="resume-title">Grandfather</h3>
+          <div class="resume-item">
+
+            <p><em> Served as Freedom Fighter.</em></p>
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <h3 class="resume-title">Occupation</h3>
+          <div class="resume-item">
+            <p><em>Social Services</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Place</h4>
+
+            <p><em>Hirekumbi Savadatti Karnataka.</em></p>
+
+          </div>
+          <div class="resume-item">
+            <h4>Aspirant for</h4>
+
+            <p><em> Member of Legislative Assembly (MLA).</em></p>
+
+          </div>
+          <div class="resume-item">
+            <h4>Assembly Constituency</h4>
+
+            <p><em> Savadatti Yelamma Constitution
+                Belagavi District.</em></p>
+
+          </div>
+
+          <div class="resume-item">
+            <h4>Permanent Address</h4>
+
+            <p><em> No 51, Bhagyalakshmi Nagar Near
+                Global College Kalidas Nagar Shirur Park Road Vidyanagar
+                Hubli -580030 Karnataka.
+                Phone Number: 7259412877.</em></p>
+
+          </div>
+          <div class="resume-item">
+            <h4>Email</h4>
+
+            <p><em> emeraldasm777@gmail.com.</em></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-plus"></i></div>
+            <h4><a href="">Free Health Camp</a></h4>
+            <p style="text-justify: center;"><span class="f">A</span>t C.B. Guttal Ayurveda University, D.C.Compound,
+              Dharwad, on behalf our society, there was an arrangement of program for the poor disable artists.
+              <strong>&nbsp; </strong><br> <span id="dots">...</span> <span id="invisible-text"> From morning 10:30 A.M
+                till 5 P.M. in the evening many and hundreds of stage artists have taken an advantage of free treatment
+                and the people ailing or suffering from several diseases and disorders: have had an advantage of free
+                medical check up and free medicines distribution was also carried out. Because of this most of the
+                donors have contributed a lot to make this program a big success.</span>
+            </p>
+            <button id="btn" onclick="moreless()">Read more</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class='bx bxs-book-reader'></i></div>
+            <h4><a href="">Youth Programs</a></h4>
+            <p>Through these training camps hundreds of NGO candidates, social workers, those who have come from
+              different Institutional Societies and MSW trainees have participated and to become successful leaders they
+              have attained a necessary knowledge and it has helped them to work efficiently for the development.
+              <span id="dots">...</span><span id="more"> and it has helped them to work efficiently for the development
+                of the society and they were avail of all the preparations. Training has achieved a big success. For
+                these programs and training camps, all the costs and expenditures related to this; were not only
+                fulfilled, but also Donors have donated financial assistance in the form of Funds for the success of the
+                Program</span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class='bx bx-up-arrow-alt'></i></div>
+            <h4><a href="">Rural Empowerment Program</a></h4>
+            <p>To enhance the Rural Women to lead their self-reliant life and understand the importance of freedom in
+              their life. Under the process of educating the young generation of rural areas; In the Computer Training
+              Centers at least 1to 2 hours of training for the SHG women is to be conducted and the products they use to
+              manufacture;
+              <span id="points">...</span><span id="moretext"> So in what best ways they can use the same and importance
+                of demand and about marketing; These rural women should be helped and guided through the Internet. So it
+                is our ambition to help the SHG women to help themselves through these technologies.</span>
+            </p>
+            <button onclick="empower()" id="textbutton">Read more</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Sympathy</a></h4>
+            <p>Life Touch Foundation (Social Service Organisation) has indulged (involved) in the program of ‘Flood
+              Relief’ with the cooperation and help from the Society of “Vishwakarma’ Karnataka Devotees and provided a
+              great help and assistance.
+              <span id="spoints">...</span><span id="smoretext">For the citizens of different places like Navalgund,
+                Gudisagar, Tirlapur, Saswihalli of Dharwad Taluka place; we have supplied food, crops, clothes and beds
+                and thus we have ushered them with a helping hand. Without having collected funds from concerned
+                programs; but by the collection of materials from the Donors of the society, we have exported these
+                necessary materials or basic needs to the flood victims.</span>
+            </p>
+            <button onclick="sympthy()" id="sbuttontext">Read more</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><span>&#10003;</span></div>
+            <h4><a href="">Human Rights</a></h4>
+            <p style="text-justify: center;"><span class="f">A</span>Today, without having mutual acquaintance among
+              most of the young couple and age old couple now a days; these husband and wife as a family begin to face
+              many of the difference of opinions and began to mislead themselves or discourage themselves without having
+              understood their own responsibilities due to lack of Awareness,
+              <strong>&nbsp; </strong> <br> <span id="hpoints">...</span><span id="hmoretext"> Equality, Mutual
+                fascination and mutual life and imbalances. At the end of the day, due to growth of many of the
+                difference of opinions; they will come and stand at the threshold of family divorce. And even they will
+                forget about their first agreement i.e. “Sapta-Padi”. </span>
+            </p>
+            <button id="hbuttontext" onclick="human()">Read more</button>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Education</a></h4>
+            <p style="text-justify: center;"><span class="f">A</span>Educational revolution, one turn in life, sympathy, helping hand, improvement, to create the place for women is our motto.
+              <strong>&nbsp;  </strong> <br>  <span id="epoints">...</span><span id="emoretext">To employ and to bring up one new revolution or a big change and it is to implement the knowledge and awareness. Moreover it is to take someone through the path of progress and totally we are focusing on one of the well and good training programme for the welfare of the entrepreneurs.</p>
+            <button id="ebhuttontext" onclick="education()">Read more</button>
+          </div>
+        </div> 
+      </div>
+
+      </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <p sie="5px">GALLARY</p>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Education</li>
+            <li data-filter=".filter-card">Development</li>
+            <li data-filter=".filter-web">Health Care</li>
+            <li data-filter=".filter-point">Achievements & Awards</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/67.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/67.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/73.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/73.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/75.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/75.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/00.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/00.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/000.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/000.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/77.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/77.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/74.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/74.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/paper12.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/paper12.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/cert8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/cert8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/76.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/76.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/111.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/111.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/cert4.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/cert4.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/500.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/500.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+       
+       
+        
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/papers1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/papers1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+           
+        <div class="col-lg-4 col-md-6 portfolio-item filter-point">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/cert5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/cert5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
+                    class="bx bx-plus"></i></a>
+
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/137.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/137.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/38.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/38.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/40.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/41.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/104.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/104.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/105.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/105.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+           
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/106.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/106.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/107.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/107.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/109.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/109.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/113.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/113.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/114.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/114.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/45.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/45.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/4.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/7.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/9.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/10.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/10.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/11.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/11.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/12.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/12.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/13.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/13.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/14.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/14.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/15.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/15.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/16.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/16.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/17.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/17.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/18.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/18.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/20.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/20.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/26.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/26.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/27.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/27.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/29.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/29.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/30.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/30.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/31.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/31.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/32.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/32.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/36.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/36.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/37.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/37.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/42.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/42.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/37.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/37.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/80.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/80.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/81.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/81.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/82.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/82.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/83.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/83.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/84.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/84.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/101.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/101.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/110.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/110.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/125.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/125.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/127.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href=" {% static 'img/portfolio/127.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/128.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/128.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/130.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/130.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/131.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/131.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/132.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/132.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/133.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/133.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/134.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/134.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/85.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/85.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/86.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/86.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/87.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/87.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/88.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/88.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/90.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/90.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/91.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/91.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/92.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/92.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/93.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/93.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/94.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/94.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/95.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/95.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/96.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/96.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/25.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p></p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/29.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+     
+    
+    <div class="container video">
+      <div class="row hed">
+             <h2> Latest Videos</h2>
+             </div> 
+             <div class="row">
+             <div class="col-sm-6">
+                 
+                 <iframe  height="400" width="500" src="https://www.youtube.com/watch?v=sl1Qa63HGRE&t=3s" frameborder="0" allowfullscreen></iframe>
+             </div>
+              
+             </div>
+    </div>
+    
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Dr. Suresh Kammar, President
+              Life Touch Foundation
+              Dharwad District Retires Building,
+              Behind Naukarar Bhavan,
+              KCD College Road, Dharwad - 580 001. KARNATAKA STATE</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="http://twitter.com/lifetouchdwd" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="http://www.facebook.com/pages/Life-Touch-Foundation/155622471194931" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/drsureshkammar?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+             
+              <a href="https://www.linkedin.com/in/dr-suresh-kammar-2365a01b2" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>lifetouchfoundation@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+91 836 3248477</p>
+              <p>+91 72594 12877</p>
+             <p>+91 89716 46271</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    Designed by <a href="https://bootstrapmade.com/">Haegl pvt ltd</a>
+  </div>
+  <script type="text/javascript">
+    $("#flipbook").turn({
+      width: 400,
+      height: 300,
+      autoCenter: true
+    });
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}" ></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
